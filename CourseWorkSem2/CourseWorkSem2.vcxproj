@@ -152,6 +152,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CourseWorkSem2.cpp" />
+    <ClCompile Include="Laba2_1.cpp" />
+    <ClCompile Include="Laba2_2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

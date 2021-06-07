@@ -18,5 +18,11 @@
     <ClCompile Include="CourseWorkSem2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Laba2_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Laba2_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

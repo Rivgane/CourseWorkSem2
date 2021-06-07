@@ -3,9 +3,68 @@
 
 #include <iostream>
 
+using namespace std;
+
+int Laba2_1();
+int Laba2_2();
+short int coursemainmenu();
+
 int main()
 {
-    std::cout << "Hello World!\n";
+	setlocale(LC_ALL, "Russian");
+
+	short int choose_menu, exit = 0;
+
+	while (1)
+	{
+		choose_menu = coursemainmenu();
+		switch (choose_menu)
+		{
+		case 1:
+			system("cls");
+			cout << "Лабораторная работа №1 \n";
+			Laba2_1();
+			system("cls");
+			break;
+		case 2:
+			system("cls");
+			cout << "Лабораторная работа №2 \n";
+			Laba2_2();
+			system("pause");
+			system("cls");
+			break;
+		case 0:
+			return -1;
+			break;
+
+		}
+	}
+
+	return 0;
+}
+
+short int coursemainmenu() // меню, выбор задания
+{
+	setlocale(LC_ALL, "Russian");
+	short int i;
+	cout << "Курсовая работа \n\n";
+	cout << "Выберите один из пунктов меню (1,2), чтобы выполнить соответствующую ей лабораторную работу, или 0, чтобы выйти. \n";
+	cout << "1) Лабораторная работа №1 \n";
+	cout << "2) Лабораторная работа №2 \n";
+	cout << "0) Выход\n" << endl;
+
+	cout << "Выбор: ";
+
+	while (1)
+	{
+		cin >> i;
+		if ((i >= 0) & (i <= 2))
+			break;
+		else
+			cout << "Некорректный ввод, повторите попытку.\n";
+	}
+	cout << "\n";
+	return i;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
